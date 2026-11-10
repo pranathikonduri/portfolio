@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Konduri Pranathi | Frontend Developer</title>
+<meta name="description" content="Portfolio of Konduri Pranathi, frontend developer from Hyderabad skilled in HTML5, CSS3, JavaScript and React.js.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Manrope:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home" aria-label="Konduri Pranathi, home"><span class="mark">KP</span><span class="logo-text">Pranathi Konduri</span></a>
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links">&#9776;</button>
+  <nav id="links" class="links">
+    <a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#contact">Contact</a>
+    <a class="btn small" href="assets/Konduri_Pranathi_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <button class="icon-btn" id="themeBtn" aria-label="Switch theme">&#9680;</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hello, I am</p>
+    <h1>Konduri Pranathi,<br><span>Frontend Developer</span></h1>
+    <p class="lead">B.Tech graduate from Hyderabad with a strong foundation in HTML5, CSS3, JavaScript and React.js. I build responsive web applications and integrate REST APIs. Open to entry-level Software and Frontend Developer roles.</p>
+    <div class="actions">
+      <a class="btn" href="assets/Konduri_Pranathi_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+      <a class="btn ghost" href="assets/Konduri_Pranathi_Resume.pdf" download="Konduri_Pranathi_Resume.pdf">Download resume</a>
+    </div>
+  </div>
+  <img class="photo" src="assets/photo.jpg" alt="Portrait of Konduri Pranathi" width="450" height="450">
+</section>
+
+<section id="about">
+  <h2>About me</h2>
+  <p class="lead">I enjoy turning designs into fast, responsive interfaces. I want to apply my technical skills to real-world projects and keep growing as a software professional.</p>
+  <div class="stats">
+    <div><b>2</b><span>React.js projects built and deployed</span></div>
+    <div><b>8.1</b><span>CGPA in B.Tech</span></div>
+    <div><b>972/1000</b><span>marks in Intermediate (MPC)</span></div>
+  </div>
+  <h3>Education</h3>
+  <ol class="timeline">
+    <li><time>2022 to 2026</time><h4>Bachelor of Technology</h4><p>Kakatiya Institute of Technology and Science, Warangal, Telangana. CGPA: 8.1</p></li>
+    <li><time>2020 to 2022</time><h4>Intermediate, MPC</h4><p>Narayana Junior College, Hyderabad, Telangana. Marks: 972/1000</p></li>
+    <li><time>2019 to 2020</time><h4>CBSE</h4><p>Tejaswi High School, Warangal, Telangana. Marks: 414/500</p></li>
+  </ol>
+  <h3>Internship and certifications</h3>
+  <ul class="plain">
+    <li><b>Telecommunication System Intern</b>, Bharat Sanchar Nigam Limited (BSNL), Hyderabad</li>
+    <li><b>VLSI Design with Verilog</b>, Technotran</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p class="lead">The technologies used to build the projects below.</p>
+  <div id="skillGroups"></div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="lead">Two React.js applications. Each card shows everything at first glance.</p>
+  <div class="grid" id="projectGrid"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="lead">Open to entry-level Software and Frontend Developer roles. Reach out any time.</p>
+  <div class="contact">
+    <div class="links-col">
+      <a href="https://linkedin.com/in/konduri-pranathi" target="_blank" rel="noopener">LinkedIn<small>linkedin.com/in/konduri-pranathi</small></a>
+      <a href="https://github.com/pranathikonduri" target="_blank" rel="noopener">GitHub<small>github.com/pranathikonduri</small></a>
+      <a href="mailto:pranathikonduri99@gmail.com">Email<small>pranathikonduri99@gmail.com</small></a>
+      <a href="tel:+917396278926">Phone<small>+91 73962 78926</small></a>
+    </div>
+    <form id="form" novalidate>
+      <h3>Send a message</h3>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p id="status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>Designed and built by Konduri Pranathi.</footer>
+<button class="icon-btn top" id="topBtn" aria-label="Back to top" hidden>&uarr;</button>
+<script src="js/script.js"></script>
+</body>
+</html>
